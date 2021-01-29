@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Rezacahyono</title>
+  </head>
+  <body>
+    <!-- Awal Header -->
+    <header class="header">
+      <div class="logo">
+          <h1>Rezacahyono</h1>
+      </div>
+      <ul>
+          <li><a href="#about" onclick="toggle()">About Me</a></li>
+          <li><a href="#skills" onclick="toggle()">Skills</a></li>
+          <li><a href="#sertifikat" onclick="toggle()">Sertifikat</a></li>
+      </ul>
+      <div class="toggle" onclick="toggle()"></div>
+  </header>
+  <!-- Akhir Header -->
+  <main>
+      <!-- profile -->
+      <section class="main_info_section">
+          <aside>
+              <div class="profile_image">
+                  <img src="asset/profile1.png" alt="profile">
+              </div>
+              <div class="profile_name">
+                  <h1>
+                      <span>M</span>
+                      <span class="m-left name">U</span>
+                      <span class="m-left name">H</span>
+                      <span class="m-left name">A</span>
+                      <span class="m-left name">M</span>
+                      <span class="m-left name">A</span>
+                      <span class="m-left name">D</span>  
+                      <span>R</span>
+                      <span class="m-left name">E</span>
+                      <span class="m-left name">Z</span>
+                      <span class="m-left name">A</span>
+                      <span>C</span>
+                      <span class="m-left name">A</span>
+                      <span class="m-left name">H</span>
+                      <span class="m-left name">Y</span>
+                      <span class="m-left name">O</span>
+                      <span class="m-left name">N</span>
+                      <span class="m-left name">O</span>
+                  </h1>
+              </div>
+          </aside>
+          <div class="text">
+              <h1>
+                  <span>H</span>
+                  <span class="m-left">e</span>
+                  <span class="m-left">l</span>
+                  <span class="m-left">l</span>
+                  <span class="m-left">o</span>
+                  <span>W</span>
+                  <span class="m-left">o</span>
+                  <span class="m-left">r</span>
+                  <span class="m-left">l</span>
+                  <span class="m-left">d</span>
+                  <br>
+                  <span>i</span>
+                  <span class="m-left">,</span>
+                  <span class="m-left">m</span>
+                  <span class="call">R</span>
+                  <span class="m-left call">e</span>
+                  <span class="m-left call">z</span>
+                  <span class="m-left call">a</span>
+              </h1>
+              <p>Kotlin / Java / Android</p>
+              <a href="#">Contact</a>
+          </div>
+      </section>
+      <!-- about -->
+      <div class="about" id="about">
+          <h1>About</h1>
+          <div class="about_me_info">
+              <p>  
+                  Hello world. My name is Muhamad Reza cahyono, can be called Jalo,
+                  I am 19 years old, born 24 August 2000,
+                  I have a height of 175 cm and weight 67 cm.</p>
+              <p>
+                  I am studying at a famous university in Pamulang, namely Pamulang University,
+                  with a major in informatics engineering.
+              </p>
+          </div>
+      </div>
+      <!-- skills content -->
+      <div class="skills" id="skills">
+          <h1>Skills</h1>
+          <div class="skills_info">
+              <p>
+                  I am a student who is still learning programming languages, I have skills gained from Dicoding material, including JAVA, KOTLIN, ANDROID, and now I'm learning web programming
+              </p>
+          </div>
+          <div class="kotlin">    
+              <div class="tag-kotlin">
+                  <p>Kotlin</p>
+              </div>
+              <div class="progressbar">
+                  <div class="bar-kotlin"></div>
+              </div>
+          </div>
+          <div class="java">
+              <div class="tag-java">
+                  <p>Java</p>
+              </div>
+              <div class="progressbar">
+                  <div class="bar-java"></div>
+              </div>
+          </div>
+          <div class="android">
+              <div class="tag-android">
+                  <p>Android</p>
+              </div>
+              <div class="progressbar">
+                  <div class="bar-android"></div>
+              </div>
+          </div>
+      </div> 
+      <!-- sertifikat cat -->
+      <div class="sertifikat" id="sertifikat">
+          <h1>Sertifikat</h1>
+          <div class="sertifikat-category">
+              <button id="language" onclick="showRequiredCategory(this)">Basic Language</button>
+              <button id="android" class="active" onclick="showRequiredCategory(this)">Android</button>
+              <button id="event" onclick="showRequiredCategory(this)">Event Dicoding</button>
+          </div>
+          <div class="category-language hideCategory">
+              <a href=""><img src="asset/kotlin.PNG" alt="kotlin"></a>
+          </div>
+          <div class="category-android showCategory">
+              <a href=""><img src="asset/kotlin.PNG" alt="kotlin"></a>
+              <a href=""><img src="asset/android.PNG" alt="android"></a>
+          </div>
+          <div class="category-event hideCategory">
+              <a href=""><img src="asset/idcamp.PNG" alt="idcamp"></a>
+              <a href=""><img src="asset/bdd.PNG" alt="bdd"></a>
+          </div>
+      </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="site_footer">
+      <div class="social_media">
+          <ul>
+              <li>
+                  <a href="https://www.instagram.com/rezacahyno/" target="_blank">
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+              </li>
+              <li>
+                  <a href="https://www.instagram.com/rezacahyno/" target="_blank">
+                    <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+                </li>
+          </ul>
+      </div>
+      <nav class="footer_nav">
+          <p>
+              Copyright &copy; 2020- Reza Cahyono. All rights reserved.
+          </p>
+      </nav>
+  </footer>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
+    <script src="js/TimelineLite.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

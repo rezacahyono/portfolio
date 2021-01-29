@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 1000px;
+    background: #151517;
+}
+/* Header */
+header {
+    background: #151517;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 1000;
+    transition: 0.6s;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #0088a9;
+    text-decoration: none;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0088a9;
+    letter-spacing: 2px;
+    font-weight: 300;
+    transition: 0.6s;
+}
+header a:hover {
+    color: white;
+}
+
+/* main section */
+main {
+    padding: 100px 100px 0 100px;
+}
+.main_info_section {
+    height: calc(100vh - 81.6px);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    margin-top: 120px;
+}
+
+.text h1 {
+    color: white;
+    font-size: 3rem;
+    cursor: context-menu;
+}
+
+.text span {
+    display: inline-block;
+}
+
+span:hover {
+    color: #0088a9;
+    transition: all .5s;
+}
+
+span.call {
+    color: #0088a9;
+}
+
+span.m-left {
+    margin-left: -10px;
+}
+
+.text p {
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: .8rem;
+    color: #0088a9;
+}
+
+.text a {
+    padding: 12px 25px;
+    background-color: none;
+    border: 3px solid #0088a9;
+    color: #0088a9;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+}
+
+.text a:hover {
+    color: white;
+}
+
+.text a::before {
+    content: '';
+    background-color: #0088a9;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.text a:hover::before {
+    height: 100%;
+}
+
+.profile_image {
+    width: 450px;
+    margin-top: 50px;
+}
+
+.profile_name h1 {
+    color: white;
+    font-size: .9rem;
+    letter-spacing: 8px;
+    cursor: context-menu;
+}
+
+.profile_name span {
+    display: inline-block;
+}
+
+.sertifikat,
+.about {
+    height: 100vh;
+    margin-top: 70px;
+}
+
+.sertifikat h1,
+.about h1 {
+    font-size: 10rem;
+    z-index: 0;
+    opacity: .1;
+    color: #0088a9;
+}
+
+.skills_info,
+.about_me_info {
+    max-width: 900px;
+    background-color: #24252A;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
+    padding: 50px;
+    position: relative;
+    top: -50px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.skills_info p,
+.about_me_info p {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.skills {
+    height: 100vh;
+}
+.skills h1 {
+    text-align: right;
+    font-size: 10rem;
+    opacity: .1;
+    color: #0088a9;
+}
+
+.kotlin,
+.java,
+.android {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+div[class^='tag-'] {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+    width: 120px;
+    height: 30px;
+    background-color: #0088a9;
+    margin-right: 30px;
+}
+
+div[class^='tag-'] p {
+    color: #151517;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    padding-top: 3px;
+    font-weight: 800;
+}
+
+.progressbar {
+    position: relative;
+    width: 600px;
+    height: 20px;
+    border: 2px solid #48CFAD;
+    border-radius: 20px;
+    margin-top: 7px;
+}
+
+div[class^='bar-'] {
+    position: absolute;
+    background-color: #48CFAD;
+    height: 10px;
+    border-radius: 20px;
+    margin: 2.7px;
+}
+.bar-kotlin,
+.bar-java,
+.bar-android {
+    width: calc(0 - 6px);
+}
+
+.sertifikat-category button {
+    text-transform: capitalize;
+    border: 3px solid #0088a9;
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: #0088a9;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    background-color: #151517;
+    outline: none;
+    cursor: pointer;
+}
+
+div[class^='category-'] {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+}
+
+.sertifikat a img {
+    width: 350px;
+    justify-self: center;
+}
+
+.sertifikat a img:hover {
+    transform: scale(1.5);
+}
+
+.sertifikat a {
+    justify-self: center;
+    position: relative;
+    display: inline-block;
+}
+
+.sertifikat-category {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sertifikat-category .active {
+    background-color: #0088a9;
+}
+
+div.hideCategory {
+    display: none;
+}
+
+button.active {
+    color: white;
+}
+
+.showCategory {
+    display: block;
+}
+
+/* footer */
+.site_footer {
+    padding-top: 100px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social_media {
+    text-align: center;
+}
+
+.social_media ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.twitter-icon,
+.instagram-icon {
+    margin-top: .625em;
+    width: 40px;
+    height: 40px;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    border-radius: 25px;
+
+}
+
+.twitter-icon:hover,
+.instagram-icon:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+.footer_nav {
+    text-align: center;
+    margin: 10px 0 20px 0;
+    color: white;
+}
+
+/* toggle */
+.toggle {
+    display: none;
+}
+
+
+@media(max-width: 992px){
+    /* header */
+    header ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+        text-align: center;
+        overflow: auto;
+        background-color: #151517;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    header.active ul {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        padding-top: 20px;
+    }
+    
+    header.active ul li a {
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 20px;
+    
+    }
+    
+    /* main */
+    .main_info_section {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text h1,
+    .text p,
+    .text a {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .text h1 {
+        letter-spacing: 15px;
+    }
+    .text p {
+        font-size: 2rem;
+    }
+
+    aside {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .profile_name h1 {
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
+    .about {
+        height: 100vh;
+        margin-top: 450px;
+    }
+
+    .skills_info p,
+    .about_me_info p {
+        font-size: 1.9rem;
+        color: white;
+    }
+    .skills {
+        margin-top: 20px;
+    }
+
+    div[class^='tag-'] p {
+        color: #151517;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 1.3rem;
+        padding-top: 3px;
+        font-weight: bolder;
+    }
+
+    .sertifikat {
+        margin-top: 300px;
+    }
+
+    /* toggle */
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .toggle::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background-color: #0088a9;
+        z-index: 1;
+        box-shadow: 0 10px 0 #0088a9;
+        transition: 0.5s;
+    }
+
+    .toggle::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background-color: #0088a9;
+        z-index: 1;
+        transition: 0.5s;
+    }
+}
+
+
